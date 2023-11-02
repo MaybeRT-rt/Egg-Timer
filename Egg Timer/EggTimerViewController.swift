@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EggTimerViewController.swift
 //  Egg Timer
 //
 //  Created by Liz-Mary on 02.11.2023.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EggTimerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .lightGray
     }
-
-
 }
 
