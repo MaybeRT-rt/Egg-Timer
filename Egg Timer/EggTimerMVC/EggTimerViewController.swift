@@ -43,8 +43,6 @@ class EggTimerViewController: UIViewController {
         
         ])
     }
-    
-    
 }
 
 //MARK: - Logic
@@ -65,7 +63,9 @@ extension EggTimerViewController {
         }
     }
     
+   // функция для запуска таймера на основе выбранной варки яйц
     func startTimerWithHardness(_ hardness: String) {
+        //получаем время варки из словаря
         if let time = eggTimes[hardness] {
             timer.invalidate()
             eggTimerView.progressBar.setProgress(0, animated: true)
