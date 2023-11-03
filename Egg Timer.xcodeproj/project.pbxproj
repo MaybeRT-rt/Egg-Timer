@@ -48,7 +48,6 @@
 		4A10D4372AF3BAA50077E2CD = {
 			isa = PBXGroup;
 			children = (
-				4A10D45B2AF3E4540077E2CD /* alarm_sound.mp3 */,
 				4A10D4422AF3BAA50077E2CD /* Egg Timer */,
 				4A10D4412AF3BAA50077E2CD /* Products */,
 			);
@@ -65,6 +64,7 @@
 		4A10D4422AF3BAA50077E2CD /* Egg Timer */ = {
 			isa = PBXGroup;
 			children = (
+				4A10D45B2AF3E4540077E2CD /* alarm_sound.mp3 */,
 				4A10D45D2AF3E48D0077E2CD /* AppDelegate */,
 				4A10D45E2AF3E49E0077E2CD /* EggTimerMVC */,
 				4A10D45F2AF53D180077E2CD /* Extensions */,
