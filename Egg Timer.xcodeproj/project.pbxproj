@@ -14,6 +14,9 @@
 		4A10D4502AF3BAA60077E2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A10D44E2AF3BAA60077E2CD /* LaunchScreen.storyboard */; };
 		4A10D4582AF3DE400077E2CD /* EggTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4572AF3DE400077E2CD /* EggTimerView.swift */; };
 		4A10D45A2AF3DE5C0077E2CD /* EggTimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4592AF3DE5C0077E2CD /* EggTimerModel.swift */; };
+		4A10D45C2AF3E4540077E2CD /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A10D45B2AF3E4540077E2CD /* alarm_sound.mp3 */; };
+		4A10D4612AF53E030077E2CD /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4602AF53E030077E2CD /* StackViewExtension.swift */; };
+		4A10D4632AF541E80077E2CD /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4622AF541E80077E2CD /* LabelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4A10D4512AF3BAA60077E2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A10D4572AF3DE400077E2CD /* EggTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerView.swift; sourceTree = "<group>"; };
 		4A10D4592AF3DE5C0077E2CD /* EggTimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerModel.swift; sourceTree = "<group>"; };
+		4A10D45B2AF3E4540077E2CD /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		4A10D4602AF53E030077E2CD /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
+		4A10D4622AF541E80077E2CD /* LabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		4A10D4372AF3BAA50077E2CD = {
 			isa = PBXGroup;
 			children = (
+				4A10D45B2AF3E4540077E2CD /* alarm_sound.mp3 */,
 				4A10D4422AF3BAA50077E2CD /* Egg Timer */,
 				4A10D4412AF3BAA50077E2CD /* Products */,
 			);
@@ -58,16 +65,42 @@
 		4A10D4422AF3BAA50077E2CD /* Egg Timer */ = {
 			isa = PBXGroup;
 			children = (
-				4A10D4432AF3BAA50077E2CD /* AppDelegate.swift */,
-				4A10D4452AF3BAA50077E2CD /* SceneDelegate.swift */,
-				4A10D4472AF3BAA50077E2CD /* EggTimerViewController.swift */,
-				4A10D4572AF3DE400077E2CD /* EggTimerView.swift */,
-				4A10D4592AF3DE5C0077E2CD /* EggTimerModel.swift */,
+				4A10D45D2AF3E48D0077E2CD /* AppDelegate */,
+				4A10D45E2AF3E49E0077E2CD /* EggTimerMVC */,
+				4A10D45F2AF53D180077E2CD /* Extensions */,
 				4A10D44C2AF3BAA60077E2CD /* Assets.xcassets */,
 				4A10D44E2AF3BAA60077E2CD /* LaunchScreen.storyboard */,
 				4A10D4512AF3BAA60077E2CD /* Info.plist */,
 			);
 			path = "Egg Timer";
+			sourceTree = "<group>";
+		};
+		4A10D45D2AF3E48D0077E2CD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4A10D4432AF3BAA50077E2CD /* AppDelegate.swift */,
+				4A10D4452AF3BAA50077E2CD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4A10D45E2AF3E49E0077E2CD /* EggTimerMVC */ = {
+			isa = PBXGroup;
+			children = (
+				4A10D4472AF3BAA50077E2CD /* EggTimerViewController.swift */,
+				4A10D4572AF3DE400077E2CD /* EggTimerView.swift */,
+				4A10D4592AF3DE5C0077E2CD /* EggTimerModel.swift */,
+			);
+			path = EggTimerMVC;
+			sourceTree = "<group>";
+		};
+		4A10D45F2AF53D180077E2CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A10D4602AF53E030077E2CD /* StackViewExtension.swift */,
+				4A10D4622AF541E80077E2CD /* LabelExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A10D4502AF3BAA60077E2CD /* LaunchScreen.storyboard in Resources */,
+				4A10D45C2AF3E4540077E2CD /* alarm_sound.mp3 in Resources */,
 				4A10D44D2AF3BAA60077E2CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +177,9 @@
 				4A10D4582AF3DE400077E2CD /* EggTimerView.swift in Sources */,
 				4A10D4482AF3BAA50077E2CD /* EggTimerViewController.swift in Sources */,
 				4A10D4442AF3BAA50077E2CD /* AppDelegate.swift in Sources */,
+				4A10D4612AF53E030077E2CD /* StackViewExtension.swift in Sources */,
 				4A10D4462AF3BAA50077E2CD /* SceneDelegate.swift in Sources */,
+				4A10D4632AF541E80077E2CD /* LabelExtensions.swift in Sources */,
 				4A10D45A2AF3DE5C0077E2CD /* EggTimerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
