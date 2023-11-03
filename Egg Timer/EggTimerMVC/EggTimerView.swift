@@ -32,46 +32,32 @@ class EggTimerView: UIView {
     var hardEggLabel = UILabel(text: "Hard", font: .systemFont(ofSize: 20))
     
     lazy var softEgg: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "soft_egg")
-        image.contentMode = .scaleAspectFit
-        
-        image.isUserInteractionEnabled = true
+        let image = UIImageView(imageName: "soft_egg")
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(softEggTapped))
         image.addGestureRecognizer(tapGestureRecognizer)
+        
         return image
     }()
     
     lazy var mediumEgg: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "medium_egg")
-        image.contentMode = .scaleAspectFit
-        
-        image.isUserInteractionEnabled = true
+        let image = UIImageView(imageName: "medium_egg")
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(mediumEggTapped))
         image.addGestureRecognizer(tapGestureRecognizer)
+        
         return image
     }()
     
-   
     lazy var hardEgg: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "hard_egg")
-        image.contentMode = .scaleAspectFit
-        
-        image.isUserInteractionEnabled = true
+        let image = UIImageView(imageName: "hard_egg")
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hardEggTapped))
         image.addGestureRecognizer(tapGestureRecognizer)
+        
         return image
     }()
      
-    
     lazy var softEggStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [softEgg, softEggLabel], axis: .vertical, spacing: 0, distribution: .fill)
         stack.alignment = .center
@@ -99,7 +85,7 @@ class EggTimerView: UIView {
     lazy var progressBar: UIProgressView = {
         let progressBar = UIProgressView()
         progressBar.translatesAutoresizingMaskIntoConstraints = false
-        progressBar.backgroundColor = .blue
+        progressBar.backgroundColor = .systemBlue
         progressBar.progressTintColor = .orange
         return progressBar
     }()
