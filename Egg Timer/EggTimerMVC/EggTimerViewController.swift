@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class EggTimerViewController: UIViewController {
+final class EggTimerViewController: UIViewController {
 
     let eggTimerView = EggTimerView()
     var audioPlayer: AVAudioPlayer?
@@ -17,7 +17,6 @@ class EggTimerViewController: UIViewController {
     var secondTimer = 0
     var timer = Timer()
     var nameSoundTimer = "alarm_sound"
-    let eggTimes = ["Soft": 300, "Medium": 420, "Hard": 720]
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -64,13 +63,12 @@ extension EggTimerViewController {
     }
     
    // функция для запуска таймера на основе выбранной варки яйц
-    func startTimerWithHardness(_ hardness: String) {
+   private func startTimerWithHardness(_ hardness: String) {
         //получаем время варки из словаря
-        if let time = eggTimes[hardness] {
+       if let time = EggModel.eggTimes[hardness] {
             timer.invalidate()
             eggTimerView.progressBar.setProgress(0, animated: true)
             secondTimer = 0
-            eggTimerView.titleLabel.text = "You should \(hardness)"
             totalTimer = time
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         }
