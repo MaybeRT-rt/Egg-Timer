@@ -10,4 +10,4 @@
 
 <br>
 <img align="left" src="https://github.com/MaybeRT-rt/gif/blob/main/Simulator-Screen-Recording-iPhone-14-Pro-2023-11-03-at-20.54.21.gif" width="150" height="330">
-<img align="left" src="https://github.com/MaybeRT-rt/gif/blob/main/egg.gif" width="150" height="330">
+<img align="left" src="https://github.com/MaybeRT-rt/gif/blob/main/egg.png" width="150" height="330">
