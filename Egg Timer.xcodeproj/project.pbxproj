@@ -17,6 +17,7 @@
 		4A10D4612AF53E030077E2CD /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4602AF53E030077E2CD /* StackViewExtension.swift */; };
 		4A10D4632AF541E80077E2CD /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4622AF541E80077E2CD /* LabelExtensions.swift */; };
 		4A10D4652AF565A90077E2CD /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4642AF565A90077E2CD /* ImageViewExtensions.swift */; };
+		4A10D4922AF7FAA70077E2CD /* EggModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10D4912AF7FAA70077E2CD /* EggModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4A10D4602AF53E030077E2CD /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		4A10D4622AF541E80077E2CD /* LabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
 		4A10D4642AF565A90077E2CD /* ImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
+		4A10D4912AF7FAA70077E2CD /* EggModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				4A10D4472AF3BAA50077E2CD /* EggTimerViewController.swift */,
 				4A10D4572AF3DE400077E2CD /* EggTimerView.swift */,
+				4A10D4912AF7FAA70077E2CD /* EggModel.swift */,
 			);
 			path = EggTimerMVC;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				4A10D4442AF3BAA50077E2CD /* AppDelegate.swift in Sources */,
 				4A10D4612AF53E030077E2CD /* StackViewExtension.swift in Sources */,
 				4A10D4462AF3BAA50077E2CD /* SceneDelegate.swift in Sources */,
+				4A10D4922AF7FAA70077E2CD /* EggModel.swift in Sources */,
 				4A10D4632AF541E80077E2CD /* LabelExtensions.swift in Sources */,
 				4A10D4652AF565A90077E2CD /* ImageViewExtensions.swift in Sources */,
 			);

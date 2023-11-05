@@ -100,7 +100,7 @@ class EggTimerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func animateImageTapped(imageView: UIImageView, label: UILabel) {
+   private func animateImageTapped(imageView: UIImageView, label: UILabel) {
         UIView.animate(withDuration: 0.2, animations: {
             imageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             label.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
