@@ -4,6 +4,7 @@
 
 - Swift 5
 - UIKit
+- MVC
 - AVFoundation
 - Pattern Delegate
 - Minimal UI Animation
